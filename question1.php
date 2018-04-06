@@ -27,9 +27,9 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 1&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvem red over grænsen på en hvid hest d. 10. juli 1920?</h4>
-            <input type='radio' name='quest1' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest1' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest1' value='gorm'> Gorm den Gamle<br><br>
+            <input type='radio' name='quest1' value='svar1'> Kong Christian d. 10.<br>
+            <input type='radio' name='quest1' value='svar2'> Kong Frederik d. 7.<br>            
+            <input type='radio' name='quest1' value='svar3'> Gorm den Gamle<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 1)-->           
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>
