@@ -33,8 +33,7 @@ Gruppens medlemmer:
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 6)-->
             
             <div class='navigation'>
-                <a class='button' href='question5.php' title='Spørgsmål 5'><<<&nbsp;&nbsp;&nbsp;Spørgsmål 5</a>
-                <input type='submit' class='button' value='Spørgsmål 7&nbsp;&nbsp;&nbsp;>>>'>
+                <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>
             </div> <!--  NAVIGATION -->
         </form>
         <?php require 'footer.php'; ?>
