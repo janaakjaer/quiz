@@ -32,10 +32,9 @@ Gruppens medlemmer:
             <input type='radio' name='quest1' value='gorm'> Gorm den Gamle<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 1)-->           
             <div class='navigation'>
-                <a class='button' href='index.php' title='Forsiden'><<<&nbsp;&nbsp;&nbsp;Til forsiden</a>
-                <input type='submit' class='button' value='Spørgsmål 2&nbsp;&nbsp;&nbsp;>>>'>
+                <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>
             </div> <!--  NAVIGATION -->
         </form>
-        <?php require 'footer.php'; ?>
+        
     </body> <!-- BODY -->
 </html> <!-- HTML -->
