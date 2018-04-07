@@ -1,3 +1,8 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+?>
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -22,14 +27,15 @@ Gruppens medlemmer:
         <?php 
             include_once 'header.php'; // Henter en ekstern header
             include_once 'functions.php'; // Henter en side med funktioner
+
         ?> 
         <form action='question2.php' method='post'> <!-- Send oplysninger til siden question2.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 1&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvem red over grænsen på en hvid hest d. 10. juli 1920?</h4>
-            <input type='radio' name='quest1' value='svar1'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest1' value='svar2'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest1' value='svar3'> Gorm den Gamle<br><br>
+            <input type='radio' name='quest1' value='Svar 1 - 1'> Kong Christian d. 10.<br>
+            <input type='radio' name='quest1' value='Svar 1 - 2'> Kong Frederik d. 7.<br>            
+            <input type='radio' name='quest1' value='Svar 1 - 3'> Gorm den Gamle<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 1)-->           
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>

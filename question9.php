@@ -1,3 +1,8 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+?>
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -27,9 +32,9 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 9&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Spørgsmål nummer 9?</h4>
-            <input type='radio' name='quest9' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest9' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest9' value='gorm'> Gorm den Gamle<br><br>
+            <input type='radio' name='quest9' value='Svar 9 - 1'> Kong Christian d. 10.<br>
+            <input type='radio' name='quest9' value='Svar 9 - 2'> Kong Frederik d. 7.<br>            
+            <input type='radio' name='quest9' value='Svar 9 - 3'> Gorm den Gamle<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 9)-->
             
             <div class='navigation'>

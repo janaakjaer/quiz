@@ -1,3 +1,9 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+?>
+
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -29,9 +35,9 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Lidt om dig selv&nbsp;</h3></legend><br>
                 <label>Hvad hedder du?</label><br>
-                <input type='text' name='name' placeholder='Skriv dit navn' autofocus required><br><br>
+                <input type='text' name='$name' placeholder='Skriv dit navn' autofocus required><br><br>
                 <label>Hvor kommer du fra?</label><br>
-                <input type='text' name='city' placeholder='Hvilken by bor du i?' autofocus required><br><br>
+                <input type='text' name='$city' placeholder='Hvilken by bor du i?' autofocus required><br><br>
             </fieldset> <!-- FIELDSET -->
             <input type='submit' class='button' value='Start quizzen'>
         </form> <!-- FORM -->

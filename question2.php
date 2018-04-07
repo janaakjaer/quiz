@@ -1,3 +1,9 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+?>
+
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -27,9 +33,9 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 2&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Spørgsmål nr. 2?</h4>
-            <input type='radio' name='quest2' value='svar 1'> Svar 1<br>
-            <input type='radio' name='quest2' value='svar 2'> Svar 2<br>            
-            <input type='radio' name='quest2' value='svar 3'> Svar 3<br><br>
+            <input type='radio' name='quest2' value='Svar 2 - 1'> Svar 1<br>
+            <input type='radio' name='quest2' value='Svar 2 - 2'> Svar 2<br>            
+            <input type='radio' name='quest2' value='Svar 2 - 3'> Svar 3<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 2)-->            
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>

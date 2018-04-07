@@ -1,3 +1,22 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+  //  $name = $_POST['name'];
+    
+?>
+
+<!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
+<!--
+Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
+Multimediedesign 2. semester klasse DKMMD17B1
+Gruppens medlemmer:
+    Annemette Søgaard Hansen
+    Camilla Vaaben Refsgaard
+    Camilla Skovgaard
+    Jan Aakjær
+    Jane Gravers Jacobsen
+--> <!-- COMMENTS -->
+
 <html lang="da"> <!-- 'lang' fortæller skærmlæsere, at sproget er dansk -->
     <head>
         <meta charset="UTF-8"> <!-- Sætter karaktersættet til UTF-8 som indeholder æ, ø og å -->
@@ -13,64 +32,61 @@
         <?php
         require_once 'header.php';
         require_once 'functions.php';
-            /* tildeling af variabler fra de forskellige sider med spørgsmål */
-            $name = $_SESSION['name'];
-            $city = $_SESSION['city'];
-            $quest1 = $_SESSION['quest1'];
-            $quest2 = $_SESSION['quest2'];
-            $quest3 = $_SESSION['quest3'];
-            $quest4 = $_SESSION['quest4'];
-            $quest5 = $_SESSION['quest5'];
-            $quest6 = $_SESSION['quest6'];
-            $quest7 = $_SESSION['quest7'];
-            $quest8 = $_SESSION['quest8'];
-            $quest9 = $_SESSION['quest9'];
-            $quest10 = $_SESSION['quest10'];
-            /* ----  tildeling slut ---- */
                 
-        echo "Kære $name fra $city. Tak fordi du har besvaret spørgeskemaet, her får du de rigtige svar:<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        echo "Kære " . $name . "fra " . $_SESSION['post-data']['city'] . "<br>Tak fordi du har besvaret spørgeskemaet, her får du de rigtige svar:<hr><br>";
+        echo "Spørgsmål 1:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest1<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest1'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+    
+        echo "Spørgsmål 2:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest2<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest2'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+    
+        echo "Spørgsmål 3:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest3<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest3'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 4:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest4<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest4'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 5:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest5<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest5'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 6:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest6<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest6'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 7:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest7<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest7'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 8:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest8<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest8'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 9:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest9<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest9'] . "<br><br>";
         echo "<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        
+        echo "Spørgsmål 10:<br>Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest10<br><br>";
+        echo "Dit svar var: " . $_SESSION['post-data']['quest10'] . "<br><br>";
         echo "<hr>";
+     
         echo "Du har i alt $total svar rigtige - flot klaret!";
         require_once 'footer.php';
+        print_r($_SESSION);
         ?>
     </body>
 </html>

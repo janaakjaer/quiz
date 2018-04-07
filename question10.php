@@ -1,3 +1,8 @@
+<?php 
+    session_start(); // Dette skal stå som det første i dokumentet for at virke! 
+    $_SESSION['post-data'] = $_POST;
+?>
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -27,9 +32,9 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 10&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Spørgsmål nummer 10?</h4>
-            <input type='radio' name='quest10' value='Svar 10-A'> 1. mulighed<br>
-            <input type='radio' name='quest10' value='Svar 10-B'> 2. mulighed<br>            
-            <input type='radio' name='quest10' value='Svar 10-C'> 3. mulighed<br><br>
+            <input type='radio' name='quest10' value='Svar 10 - 1'> 1. mulighed<br>
+            <input type='radio' name='quest10' value='Svar 10 - 2'> 2. mulighed<br>            
+            <input type='radio' name='quest10' value='Svar 10 - 3'> 3. mulighed<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 10)-->
             
             <div class='navigation'>
