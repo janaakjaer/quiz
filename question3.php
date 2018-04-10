@@ -1,5 +1,6 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
+$_SESSION['quest2'] = $_POST['quest2'];
 ?>
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
@@ -16,7 +17,7 @@ Gruppens medlemmer:
 <html lang="da"> <!-- 'lang' fortæller skærmlæsere, at sproget er dansk -->
     <head>
         <meta charset="UTF-8"> <!-- Sætter karaktersættet til UTF-8 som indeholder æ, ø og å -->
-        <title>Genforenings- og Grænsemuseets quiz | Spørgsmål 3</title> <!-- Titel på faneblad/side -->
+        <title>Spørgsmål 3 | Genforenings- og Grænsemuseets quiz</title> <!-- Titel på faneblad/side -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  Responsivt - siden må max være samme bredde som device og skal ikke være zoomet ind/ud  -->
         <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Linker til stylesheetet 'styles.css i mappen 'css' -->
     </head> <!-- HEAD -->
@@ -24,16 +25,14 @@ Gruppens medlemmer:
     <body>
         <?php 
             include_once 'header.php'; // Henter en ekstern header
-            include_once 'functions.php'; // Henter en side med funktioner
-            require_once 'connect.php'; // Henter opkoblingslink til database
         ?> 
         <form action='question4.php' method='post'> <!-- Send oplysninger til siden question4.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 3&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvad hed pigen, som kongen tog med op på sin hest?</h4>
-            <input type='radio' name='quest3' value='Svar 1'> Johanne<br>
-            <input type='radio' name='quest3' value='Svar 2'> Katrine<br>            
-            <input type='radio' name='quest3' value='Svar 3'> Sofie<br><br>
+            <input type='radio' name='quest3' value='Johanne'> Johanne<br>  <!-- Det korrekte svar er A -->
+            <input type='radio' name='quest3' value='Katrine'> Katrine<br>            
+            <input type='radio' name='quest3' value='Sofie'> Sofie<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 3)-->           
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>

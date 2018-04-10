@@ -1,6 +1,7 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
-$_SESSION['quest1'] = '';
+$_SESSION["name"] = $_POST['navn'];
+$_SESSION["city"] = $_POST['by'];
 ?><!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -16,29 +17,28 @@ Gruppens medlemmer:
 <html lang="da"> <!-- 'lang' fortæller skærmlæsere, at sproget er dansk -->
     <head>
         <meta charset="UTF-8"> <!-- Sætter karaktersættet til UTF-8 som indeholder æ, ø og å -->
-        <title>Spørgsmål 1</title> <!-- Titel på faneblad/side -->
+        <title>Spørgsmål 1 | Genforenings- og Grænsemuseets quiz</title> <!-- Titel på faneblad/side -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  Responsivt - siden må max være samme bredde som device og skal ikke være zoomet ind/ud  -->
         <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Linker til stylesheetet 'styles.css i mappen 'css' -->
     </head> <!-- HEAD -->
     
     <body>
         <?php 
-            include_once 'header.php'; // Henter en ekstern header
-            include_once 'functions.php'; // Henter en side med funktioner
-            require_once 'connect.php'; // Henter opkoblingslink til database           
+            include_once 'header.php'; // Henter en ekstern header           
         ?> 
         <form action='question2.php' method='post'> <!-- Send oplysninger til siden question2.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 1&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Hvornår fandt Genforeningen sted?</h4>
-            <input type='radio' name='quest1' value='chr-x'> 10. april 1920<br>
-            <input type='radio' name='quest1' value='frd-7'> 10. juli 1920<br>            
-            <input type='radio' name='quest1' value='gorm'> 10. oktober 1920<br><br>
+                <h4 class='heading2'>Hvornår red kongen over grænsen for at fejre Genforeningen?</h4>
+            <input type='radio' name='quest1' value='10. april 1920'> 10. april 1920<br>
+            <input type='radio' name='quest1' value='10. juli 1920'> 10. juli 1920<br>  <!-- Det korrekte svar er B -->            
+            <input type='radio' name='quest1' value='10. oktober 1920'> 10. oktober 1920<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 1)-->           
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>
             </div> <!--  NAVIGATION -->
         </form>
+        <?php require 'footer.php'; ?>
         
     </body> <!-- BODY -->
 </html> <!-- HTML -->
