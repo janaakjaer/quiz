@@ -1,6 +1,8 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
 $_SESSION['quest1'] = $_POST['quest1'];
+
+    
 ?>
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--

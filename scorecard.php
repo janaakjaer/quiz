@@ -8,7 +8,7 @@ $_SESSION['quest10'] = $_POST['quest10'];
         <title>Dine resultater | Genforenings- og Grænsemuseets quiz</title>
         <meta name="author" content="Jan Aakjaer"> <!-- Siden er lavet af Jan Aakjaer -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  Responsivt - siden må max være samme bredde som device og skal ikke være zoomet ind/ud  -->
-        <link rel="stylesheet" type="text/css" href="css/printer.css"> <!-- Linker til stylesheetet til udskrift.' -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css"> <!-- Linker til stylesheetet til udskrift.' -->
     </head>
     <body>
         <div>
@@ -78,9 +78,7 @@ $_SESSION['quest10'] = $_POST['quest10'];
                     fordi de ikke ville kæmpe på Tysklands side?<br>";
         echo "Det rigtige svar er: <strong>2423</strong><br>";
         echo "<strong>Dit svar var: </strong>" . $_SESSION['quest10'];
-        echo "<hr>";
-        
-        echo "Du har i alt " . $_SESSION["total"] . "svar rigtige - flot klaret!";
+       
         require_once 'footer.php';
         ?>
     </body>

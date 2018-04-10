@@ -1,6 +1,5 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
-$_SESSION["total"] = 0;
 ?>
 
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
@@ -28,7 +27,7 @@ Gruppens medlemmer:
             include_once 'header.php'; // Henter en ekstern header
         ?> 
         <p>Hej og velkommen til vores quiz om gamle dage.</p>
-        <p>Svar på 10 spørgsmål og slut af med at få et diplom med dit resultat.</p><br>
+        <p>Svar på 10 spørgsmål og test din viden.</p><br>
         <p>Vi starter lige med lidt spørgsmål om dig selv.</p><br><br>
         <form action='question1.php' method='POST'> <!-- SEND DATA TIL QUESTION1.PHP -->
             <fieldset>
