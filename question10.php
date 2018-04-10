@@ -30,10 +30,11 @@ Gruppens medlemmer:
         <form action='scorecard.php' method='post'> <!-- Send oplysninger til siden scorecard.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 10&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 10?</h4>
-            <input type='radio' name='quest10' value='Svar 10-A'> 1. mulighed<br>
-            <input type='radio' name='quest10' value='Svar 10-B'> 2. mulighed<br>            
-            <input type='radio' name='quest10' value='Svar 10-C'> 3. mulighed<br><br>
+                <h4 class='heading2'>Hvor mange soldater (fra Sønderjylland) deserterede (nægtede at deltage) i 1. verdenskrig,<br>
+                    fordi de ikke ville kæmpe på Tysklands side?</h4>
+            <input type='radio' name='quest10' value='Svar 10-A'> 2423<br>
+            <input type='radio' name='quest10' value='Svar 10-B'> 5094<br>            
+            <input type='radio' name='quest10' value='Svar 10-C'> 7382<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 10)-->
             
             <div class='navigation'>

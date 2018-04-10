@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question10.php' method='post'> <!-- Send oplysninger til siden question10.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 9&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 9?</h4>
-            <input type='radio' name='quest9' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest9' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest9' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Hvad er Kong Christian til Kronprins Frederik?</h4>
+            <input type='radio' name='quest9' value='chr-x'> Far<br>
+            <input type='radio' name='quest9' value='frd-7'> Morfar<br>            
+            <input type='radio' name='quest9' value='gorm'> Oldefar<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 9)-->
             
             <div class='navigation'>

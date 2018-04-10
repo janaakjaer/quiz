@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question6.php' method='post'> <!-- Send oplysninger til siden question6.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 5&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 5?</h4>
-            <input type='radio' name='quest5' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest5' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest5' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Hvor syede man flagene til Genforeningen?</h4>
+            <input type='radio' name='quest5' value='chr-x'> Fredensborg<br>
+            <input type='radio' name='quest5' value='frd-7'> Gråsten Slot<br>            
+            <input type='radio' name='quest5' value='gorm'> Christiansborg<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 5)-->
             
             <div class='navigation'>

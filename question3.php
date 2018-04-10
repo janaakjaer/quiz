@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question4.php' method='post'> <!-- Send oplysninger til siden question4.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 3&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 3?</h4>
-            <input type='radio' name='quest3' value='Svar 1'> Svar 1<br>
-            <input type='radio' name='quest3' value='Svar 2'> Svar 2<br>            
-            <input type='radio' name='quest3' value='Svar 3'> Svar 3<br><br>
+                <h4 class='heading2'>Hvad hed pigen, som kongen tog med op på sin hest?</h4>
+            <input type='radio' name='quest3' value='Svar 1'> Johanne<br>
+            <input type='radio' name='quest3' value='Svar 2'> Katrine<br>            
+            <input type='radio' name='quest3' value='Svar 3'> Sofie<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 3)-->           
             <div class='navigation'>
                 <input type='submit' class='button' value='Næste&nbsp;&nbsp;&nbsp;>>>'>

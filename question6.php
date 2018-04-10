@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question7.php' method='post'> <!-- Send oplysninger til siden question7.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 6&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 6?</h4>
-            <input type='radio' name='quest6' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest6' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest6' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Var Haderslev en del af Tyskland inden Genforeningen?</h4>
+            <input type='radio' name='quest6' value='chr-x'> Ja, Haderslev var tysk<br>
+            <input type='radio' name='quest6' value='frd-7'> Nej, Haderslev har hele tiden været dansk<br>            
+            <input type='radio' name='quest6' value='gorm'> Haderslev er stadig tysk<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 6)-->
             
             <div class='navigation'>

@@ -17,10 +17,10 @@ session_start(); // Skal stå øverst på den side, hvor SESSION bruges
         require_once 'header.php';
         require_once 'functions.php';
         require_once 'connect.php'; // Henter opkoblingslink til database
-        echo "Tak fordi du har besvaret spørgeskemaet $_SESSION[0] fra $_SESSION[1], her får du de rigtige svar:<hr>";
-        echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
+        echo "Tak fordi du har besvaret spørgeskemaet " . $_SESSION["0"] . " fra " . $_SESSION["1"] . ", her får du de rigtige svar:<hr>";
+        echo "Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";
-        echo "Dit svar var: $quest1<br><br>";
+        answer($quest1);
         echo "<hr>";
         echo "1) Hvem red over grænsen på en hvid hest d. 10. juli 1920?<br>";
         echo "Det rigtige svar er: <strong>Kong Christian d. 10.</strong><br>";

@@ -13,4 +13,8 @@ $quest7 = $_SESSION['quest7'];
 $quest8 = $_SESSION['quest8'];
 $quest9 = $_SESSION['quest9'];
 $quest10 = $_SESSION['quest10'];
+
+function answer( $question ) {
+    echo "Dit svar var $question<br>";
+}
 ?>

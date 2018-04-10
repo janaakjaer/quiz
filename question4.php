@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question5.php' method='post'> <!-- Send oplysninger til siden question5.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 4&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 4?</h4>
-            <input type='radio' name='quest4' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest4' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest4' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Hvad var inskriptionen på hestens forsølvede hov?</h4>
+            <input type='radio' name='quest4' value='chr-x'> Jeg Kongen bar, hvor Grænsen var<br>
+            <input type='radio' name='quest4' value='frd-7'> Jeg Kongen bar til grænsefesten højt mod nord, hvor Sønderjylland igen blev dansk<br>            
+            <input type='radio' name='quest4' value='gorm'> Jeg Kongen bar over Grænsen hen, da Sønderjylland blev dansk igen<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 4)-->
             
             <div class='navigation'>

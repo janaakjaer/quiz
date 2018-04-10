@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question8.php' method='post'> <!-- Send oplysninger til siden question8.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 7&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Hvem red over grænsen på en hvid hest d. 10. juli 1920?</h4>
-            <input type='radio' name='quest7' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest7' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest7' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Hvad hed Kong Christians dronning?</h4>
+            <input type='radio' name='quest7' value='chr-x'> Frederikke<br>
+            <input type='radio' name='quest7' value='frd-7'> Alexandrine<br>            
+            <input type='radio' name='quest7' value='gorm'> Margrethe<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 7)-->
             
             <div class='navigation'>

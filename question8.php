@@ -30,10 +30,10 @@ Gruppens medlemmer:
         <form action='question9.php' method='post'> <!-- Send oplysninger til siden question9.php -->
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 8&nbsp;</h3></legend><br>
-                <h4 class='heading2'>Spørgsmål nummer 8?</h4>
-            <input type='radio' name='quest8' value='chr-x'> Kong Christian d. 10.<br>
-            <input type='radio' name='quest8' value='frd-7'> Kong Frederik d. 7.<br>            
-            <input type='radio' name='quest8' value='gorm'> Gorm den Gamle<br><br>
+                <h4 class='heading2'>Hvad var Kong Christians valgsprog?</h4>
+            <input type='radio' name='quest8' value='chr-x'> Ske Herrens vilje<br>
+            <input type='radio' name='quest8' value='frd-7'> Min Gud, mit Land, min Ære<br>            
+            <input type='radio' name='quest8' value='gorm'> Guds hjælp, folkets kærlighed, Danmarks styrke<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 8)-->
             
             <div class='navigation'>
