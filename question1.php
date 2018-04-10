@@ -1,7 +1,7 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
-$_SESSION["name"] = $_POST['navn'];
-$_SESSION["city"] = $_POST['by'];
+$_SESSION["name"] = $_POST['navn'];  // Laver et array med POST fra index-siden.
+$_SESSION["city"] = $_POST['by'];    // Laver et array med POST fra index-siden.
 ?><!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 1&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvornår red kongen over grænsen for at fejre Genforeningen?</h4>
-            <input type='radio' name='quest1' value='10. april 1920'> 10. april 1920<br>
+            <input type='radio' name='quest1' value='10. april 1920' required> 10. april 1920<br>  <!-- REQUIRED gør det nødvendigt at vælge en af mulighederne -->
             <input type='radio' name='quest1' value='10. juli 1920'> 10. juli 1920<br>  <!-- Det korrekte svar er B -->            
             <input type='radio' name='quest1' value='10. oktober 1920'> 10. oktober 1920<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 1)-->           

@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 5&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvor syede man flagene til Genforeningen?</h4>
-            <input type='radio' name='quest5' value='Fredensborg'> Fredensborg<br>
+            <input type='radio' name='quest5' value='Fredensborg' required> Fredensborg<br>
             <input type='radio' name='quest5' value='Gråsten Slot'> Gråsten Slot<br>            
             <input type='radio' name='quest5' value='Christiansborg'> Christiansborg<br><br>  <!-- Det korrekte svar er C -->
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 5)-->

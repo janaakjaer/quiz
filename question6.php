@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 6&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Var Haderslev en del af Tyskland inden Genforeningen?</h4>
-            <input type='radio' name='quest6' value='Ja, Haderslev var tysk'> Ja, Haderslev var tysk<br>    <!-- Det rigtige svar er A --> 
+            <input type='radio' name='quest6' value='Ja, Haderslev var tysk' required> Ja, Haderslev var tysk<br>    <!-- Det rigtige svar er A --> 
             <input type='radio' name='quest6' value='Nej, Haderslev har hele tiden været dansk'> Nej, Haderslev har hele tiden været dansk<br>        
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 6)-->
             

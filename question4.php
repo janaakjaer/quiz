@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 4&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvad var inskriptionen (teksten) på hestens forsølvede hov?</h4>
-            <input type='radio' name='quest4' value='Jeg Kongen bar, hvor Grænsen var'> Jeg Kongen bar, hvor Grænsen var<br>
+            <input type='radio' name='quest4' value='Jeg Kongen bar, hvor Grænsen var' required> Jeg Kongen bar, hvor Grænsen var<br>
             <input type='radio' name='quest4' value='Jeg Kongen bar til grænsefesten højt mod nord, hvor Sønderjylland igen blev dansk'> Jeg Kongen bar til grænsefesten højt mod nord, hvor Sønderjylland igen blev dansk<br>            
             <input type='radio' name='quest4' value='Jeg Kongen bar over Grænsen hen, da Sønderjylland blev dansk igen'> Jeg Kongen bar over Grænsen hen, da Sønderjylland blev dansk igen<br><br>   <!-- Det korrekte svar er C -->
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 4)-->

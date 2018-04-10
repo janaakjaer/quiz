@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Skal stå øverst på den side, hvor SESSION bruges
-$_SESSION['quest1'] = $_POST['quest1'];
+$_SESSION['quest1'] = $_POST['quest1'];  // Laver et array med POST fra question1-siden.
 
     
 ?>
@@ -32,7 +32,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 2&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvilken konge red over grænsen ved Genforeningen i 1920?</h4>
-            <input type='radio' name='quest2' value='Kong Frederik d. 9. (IX)'> Kong Frederik d. 9. (IX)<br>
+            <input type='radio' name='quest2' value='Kong Frederik d. 9. (IX)' required> Kong Frederik d. 9. (IX)<br>
             <input type='radio' name='quest2' value='Kong Christian d. 10. (X)'> Kong Christian d. 10. (X)<br>  <!-- Det korrekte svar er B -->          
             <input type='radio' name='quest2' value='Kong Frederik d. 10. (X)'> Kong Frederik d. 10. (X)<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 2)-->            

@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 9&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvad er Kong Christian til Kronprins Frederik?</h4>
-            <input type='radio' name='quest9' value='Far'> Far<br>
+            <input type='radio' name='quest9' value='Far' required> Far<br>
             <input type='radio' name='quest9' value='Morfar'> Morfar<br>            
             <input type='radio' name='quest9' value='Oldefar'> Oldefar<br><br>  <!-- Det korrekte svar er C -->
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 9)-->

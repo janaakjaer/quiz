@@ -31,7 +31,7 @@ Gruppens medlemmer:
                 <legend><h3>&nbsp;Spørgsmål 10&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvor mange soldater (fra Sønderjylland) deserterede (nægtede at deltage) i 1. verdenskrig,<br>
                     fordi de ikke ville kæmpe på Tysklands side?</h4>
-            <input type='radio' name='quest10' value='2423'> 2423<br>  <!-- Det korrekte svar er A -->
+            <input type='radio' name='quest10' value='2423' required> 2423<br>  <!-- Det korrekte svar er A -->
             <input type='radio' name='quest10' value='5094'> 5094<br>            
             <input type='radio' name='quest10' value='7382'> 7382<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 10)-->

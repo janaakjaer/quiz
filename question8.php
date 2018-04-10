@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 8&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvad var Kong Christians valgsprog?</h4>
-            <input type='radio' name='quest8' value='Ske Herrens vilje'> Ske Herrens vilje<br>
+            <input type='radio' name='quest8' value='Ske Herrens vilje' required> Ske Herrens vilje<br>
             <input type='radio' name='quest8' value='Min Gud, mit Land, min Ære'> Min Gud, mit Land, min Ære<br>    <!-- Det korrekte svar er B -->        
             <input type='radio' name='quest8' value='Guds hjælp, folkets kærlighed, Danmarks styrke'> Guds hjælp, folkets kærlighed, Danmarks styrke<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 8)-->

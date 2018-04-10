@@ -30,7 +30,7 @@ Gruppens medlemmer:
             <fieldset>
                 <legend><h3>&nbsp;Spørgsmål 3&nbsp;</h3></legend><br>
                 <h4 class='heading2'>Hvad hed pigen, som kongen tog med op på sin hest?</h4>
-            <input type='radio' name='quest3' value='Johanne'> Johanne<br>  <!-- Det korrekte svar er A -->
+            <input type='radio' name='quest3' value='Johanne' required> Johanne<br>  <!-- Det korrekte svar er A -->
             <input type='radio' name='quest3' value='Katrine'> Katrine<br>            
             <input type='radio' name='quest3' value='Sofie'> Sofie<br><br>
             </fieldset> <!-- FIELDSET (SPØRGSMÅL 3)-->           
