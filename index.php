@@ -1,3 +1,9 @@
+<?php 
+session_start(); // Skal stå øverst på den side, hvor SESSION bruges
+$_SESSION['name'] = '';  // Opretter en array-variabel (name) med værdien 'navn'
+$_SESSION['city'] = '';  // opretter en array-variabel (city) med værdien 'by'
+?>
+
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -21,17 +27,18 @@ Gruppens medlemmer:
     <body>
         <?php 
             include_once 'header.php'; // Henter en ekstern header
+            require_once 'connect.php'; // Henter opkoblingslink til database
         ?> 
         <p>Hej og velkommen til vores quiz om gamle dage.</p>
         <p>Svar på 10 spørgsmål og slut af med at få et diplom med dit resultat.</p><br>
         <p>Vi starter lige med lidt spørgsmål om dig selv.</p><br><br>
-        <form action='question1.php' method='post'> <!-- SEND DATA TIL QUESTION1.PHP -->
+        <form action='question1.php' method='session'> <!-- SEND DATA TIL QUESTION1.PHP -->
             <fieldset>
                 <legend><h3>&nbsp;Lidt om dig selv&nbsp;</h3></legend><br>
                 <label>Hvad hedder du?</label><br>
-                <input type='text' name='name' placeholder='Skriv dit navn' autofocus required><br><br> <!-- autofocus gør inputfeltet aktivt straks man lander på siden. -->
+                <input type='text' name='$_SESSION[]' placeholder='Skriv dit navn' autofocus required><br><br> <!-- autofocus gør inputfeltet aktivt straks man lander på siden. -->
                 <label>Hvor kommer du fra?</label><br>
-                <input type='text' name='city' placeholder='Hvilken by bor du i?' required><br><br>
+                <input type='text' name='$_SESSION[]' placeholder='Hvilken by bor du i?' required><br><br>
             </fieldset> <!-- FIELDSET -->
             <input type='submit' class='button' value='Start quizzen'>
         </form> <!-- FORM -->

@@ -1,4 +1,7 @@
-<!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
+<?php 
+session_start(); // Skal stå øverst på den side, hvor SESSION bruges
+$_SESSION['quest1'] = '';
+?><!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
 Multimediedesign 2. semester klasse DKMMD17B1
@@ -22,6 +25,7 @@ Gruppens medlemmer:
         <?php 
             include_once 'header.php'; // Henter en ekstern header
             include_once 'functions.php'; // Henter en side med funktioner
+            require_once 'connect.php'; // Henter opkoblingslink til database           
         ?> 
         <form action='question2.php' method='post'> <!-- Send oplysninger til siden question2.php -->
             <fieldset>

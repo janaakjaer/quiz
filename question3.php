@@ -1,3 +1,6 @@
+<?php 
+session_start(); // Skal stå øverst på den side, hvor SESSION bruges
+?>
 <!DOCTYPE html> <!-- Viser at siden bygger på HTML5 -->
 <!--
 Denne quiz er et Real-Life-projekt for IBA Erhvervsakademi Kolding.
@@ -22,6 +25,7 @@ Gruppens medlemmer:
         <?php 
             include_once 'header.php'; // Henter en ekstern header
             include_once 'functions.php'; // Henter en side med funktioner
+            require_once 'connect.php'; // Henter opkoblingslink til database
         ?> 
         <form action='question4.php' method='post'> <!-- Send oplysninger til siden question4.php -->
             <fieldset>
