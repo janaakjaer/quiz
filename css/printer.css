@@ -14,19 +14,26 @@ h1, h2, h3, h4, h5, h6, p, a, fieldset {
     font-family: verdana;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .heading1 {
     background-color: white;
-    text-align: center;
+    font-size: 14px;
 }
 
 .heading2 {
-    background-color: lightgrey;
+    background-color: #001039;
+    opacity: 0.8;
     padding: 5px;
     text-align: left;
 }
 
 fieldset {
     border-radius: 0px 8px 0px 8px;
+    border-color: #001039
 }
 
 
@@ -41,6 +48,7 @@ fieldset {
     border-radius: 10px 10px;
     padding: 15px;
 }
+
 h4 {
     text-align: center;
 }
@@ -48,4 +56,15 @@ h4 {
 a {
     text-decoration: none;
     font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 82px;
+    padding-top: 2px;
+    background-color: #001039;
+    opacity: 0.5;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 10px;
 }
